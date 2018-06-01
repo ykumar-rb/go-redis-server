@@ -28,6 +28,7 @@ type Database struct {
 func NewDatabase(parent *Database) *Database {
 	db := &Database{
 		values:   make(HashValue),
+		hvalues:  make(HashHash),
 		sub:      make(HashSub),
 		brstack:  make(HashBrStack),
 		children: map[int]*Database{},
